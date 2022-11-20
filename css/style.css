@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  width: 100vw;
+}
+
+nav {
+  background: #222;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #ef4b3f;
+}
+nav .logo {
+  flex: 1;
+}
+nav .logo a {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+nav .logo a:hover {
+  color: #fff;
+}
+nav .logo img {
+  width: 100px;
+  margin: 10px;
+  order-radius: 78px 200px 60px 102px;
+  -webkit-border-radius: 78px 200px 60px 102px;
+  -moz-border-radius: 78px 200px 60px 102px;
+  border: 6px solid #ff6550;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+nav .menu li {
+  padding: 15px 10px;
+  font-size: 22px;
+}
+nav .toggle {
+  font-size: 50px;
+  display: none;
+}
+
+.grid_container .grid_item1 .flex_item a img, .grid_container .grid_item2 .flex_item a img, .grid_container .grid_item3 .flex_item a img, .grid_container .grid_item4 .flex_item a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+  }
+  nav .menu {
+    margin-top: 15px;
+    display: none;
+  }
+  nav .menu.active, nav .toggle {
+    display: block;
+  }
+  nav .toggle {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
