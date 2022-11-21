@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    width: 100vw;
+}
+
+nav {
+    background: #222;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: #fff;        
+        text-decoration: none;
+
+        &:hover {
+            color: #ef4b3f;
+        }
+    }
+
+    .logo{
+        flex: 1;
+        
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+    
+            &:hover {
+                color: #fff;
+            }
+        }
+    
+        img{
+            width: 100px;
+            margin: 10px;
+            border-radius: 78px 200px 60px 102px;
+            -webkit-border-radius: 78px 200px 60px 102px;
+            -moz-border-radius: 78px 200px 60px 102px;
+            border: 6px solid #ff6550; 
+        }
+    
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    
+        li{
+            padding: 15px 10px;
+            font-size: 22px;
+        }
+    }
+    
+    .toggle {
+        font-size: 50px;
+        display: none;
+    }
+
+}
+
+// -----MAIN-------
+
+.grid_container {
+
+    .grid_item1, .grid_item2, .grid_item3, .grid_item4 {
+
+        .flex_item {
+
+            a img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ----TABLET Y MOBILE-------
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+
+        .menu {
+            margin-top: 15px;
+            display: none;
+
+        }
+
+        .menu.active, .toggle {
+            display: block;
+
+        }
+
+        .toggle {
+            position: absolute;
+            top: 15px;
+            right: 30px;
+        }
+    }
+
+
+}
