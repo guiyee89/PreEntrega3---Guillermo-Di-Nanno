@@ -19,7 +19,7 @@
         grid-column: span 4;
 
         img {
-            width: 450px;
+            width: min(100% - 10px, 600px);
             padding: 15px;
         }
     }
@@ -51,7 +51,7 @@
         .travel_img {
 
             .zoom_1 {
-                padding: 50px;
+                padding: 35px;
                 transition: transform .2s; /* Animation */  
                 margin: 0 auto;
                 transform: rotate(8deg) translate(-1px,0px);
@@ -59,13 +59,13 @@
                 -moz-transform: rotate(8deg) translate(-1px,0px);
 
                 &:hover {
-                    transform: scale(1.5); 
+                    transform: scale(1.15); 
                     transition: all 0.3s ease-in-out;
                 }
             }
 
             .zoom_2 {
-                padding: 50px;
+                padding: 35px;
                 transition: transform .2s; /* Animation */  
                 margin: 0 auto;
                 transform: rotate(354deg) translate(-1px,0px);
@@ -73,7 +73,7 @@
                 -moz-transform: rotate(354deg) translate(-1px,0px);
 
                 &:hover {
-                    transform: scale(1.5); 
+                    transform: scale(1.15); 
                     transition: all 0.3s ease-in-out;
                 }
             }
@@ -108,7 +108,7 @@
             .travel_img {
 
                 img {
-                    width: 350px;
+                    width: min(100% - 10px, 600px)
                 }
             }
         }
