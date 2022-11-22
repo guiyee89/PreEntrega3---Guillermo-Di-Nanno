@@ -6,6 +6,7 @@
 
 $logo: 200px;
 
+
 * {
     margin: 0;
     padding: 0;
@@ -77,20 +78,88 @@ nav {
 
 }
 
+
+
+
 // -----MAIN-------
 
 .grid_container {
 
-    .grid_item1, .grid_item2, .grid_item3, .grid_item4 {
+    // GRID DEL MAIN Y CARDS
 
-        .flex_item {
+    @extend %grid_container_pc; 
 
-            a img{
-                width: 100%;
+    article {
+        border: 1px solid black;
+    }
+
+    .grid_item1, .grid_item2 {
+        grid-column: span 2;
+    }
+
+    .card{
+            
+        @extend %card;
+
+        &:hover{
+            border-bottom-right-radius: 50px;
+            border-top-left-radius: 50px;
+            transform: scale(1.05);
+        }
+    }
+
+
+    // CONTENIDO CAJITAS 
+
+    .flex_container {
+
+        @extend %flex_container;
+
+        div{
+            padding: 8px 0px;
+    
+            a{
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 90%;
+                }  
+
+                // BTN
+
+                button{
+                    
+                    @extend %button;
+
+                    .button_top{
+                        @extend %button_top;
+                    }
+
+                    &:hover .button_top{
+                        transform: translateY(-0.33em);
+                    }
+
+                    &:active .button_top{
+                        transform: translateY(0);
+                    }
+                }
             }
+
+            h2{
+                padding-top: 30px;
+            }
+
+            p{
+                padding: 35px;
+                text-align: center;
+            }
+
         }
     }
 }
+
+
 
 // ----TABLET Y MOBILE-------
 
