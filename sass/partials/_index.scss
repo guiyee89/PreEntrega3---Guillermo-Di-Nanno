@@ -6,6 +6,7 @@
 
 $logo: 200px;
 
+// -----------------------------------------------------------------------
 
 * {
     margin: 0;
@@ -15,7 +16,17 @@ $logo: 200px;
 
 body {
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
+
+.t-center{
+    @extend %t-center;
+}
+
+// --------------------------------------------------------------------
+
+// ----- HEADER GENERAL -----
+
 
 header{
     width: 100vw;
@@ -79,13 +90,28 @@ nav {
 }
 
 
+// -----------------------------------------------------------------------
+
+// ----------  MAIN  -----------
+
+// CAROUSEL
+.carousel-item{
+    img{
+        width: 85%!important;
+        margin: auto;
+    }
+}
+.carousel-control-prev{
+    width: 18%;
+}
+.carousel-control-next{
+    width: 18%;
+}
 
 
-// -----MAIN-------
+// GRID DEL MAIN Y CARDS 
 
 .grid_container {
-
-    // GRID DEL MAIN Y CARDS
 
     @extend %grid_container_pc; 
 
@@ -109,7 +135,7 @@ nav {
     }
 
 
-    // CONTENIDO CAJITAS 
+//  CONTENIDO CAJITAS 
 
     .flex_container {
 
@@ -126,8 +152,8 @@ nav {
                     width: 90%;
                 }  
 
-                // BTN
-
+//  BTN   
+  
                 button{
                     
                     @extend %button;
@@ -159,11 +185,23 @@ nav {
     }
 }
 
+// -------------------------------------------------------------------------
+
+// ---------    FOOTER     -----------
 
 
-// ----TABLET Y MOBILE-------
+footer{
+    @extend %footer;
+}
+
+
+// -----------------------------------------------------------------------
+
+// ------   TABLET Y MOBILE   ---------
 
 @media screen and (max-width: 800px) {
+
+// HEADER GENERAL
     nav {
         display: block;
         position: relative;
@@ -188,4 +226,33 @@ nav {
     }
 
 
+// GRID HOME
+
+    .grid_container{
+        margin: 20px auto;
+
+        article{
+            margin: 0 15px;
+        }
+        .grid_item1{
+            grid-column: span 4;
+        }
+        .grid_item2{
+            grid-column: span 4;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    // CAROUSEL
+
+    .carousel-item img{
+        width: 100%!important;   
+    }
+    .carousel-control-prev{
+        width: 18%;
+    }
+    .carousel-control-next{
+        width: 18%;
+    }
 }
