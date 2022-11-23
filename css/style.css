@@ -418,6 +418,14 @@ nav .toggle {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
 }
+.grid_container_about article {
+  border: 1px solid black;
+  width: auto;
+  margin: 0px auto;
+  box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+}
 .grid_container_about .grid_travel_col_1 {
   grid-column: span 4;
 }
@@ -426,26 +434,54 @@ nav .toggle {
   flex-direction: row;
   align-items: center;
 }
-.grid_container_about article {
-  border: 1px solid black;
-  width: auto;
-  margin: 0px 150px;
-  box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+.grid_container_about .flex_item_travel div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.grid_container_about article .about_travel_buybutton h2 {
+.grid_container_about .flex_item_travel div img {
+  width: 450px;
+  padding: 15px;
+}
+.grid_container_about .flex_item_travel div .about_img {
+  width: min(100% - 10px, 500px);
+}
+.grid_container_about .flex_item_travel .about_travel_buybutton h2 {
   padding: 30px;
   font-weight: bold;
 }
-.grid_container_about article .about_travel_buybutton h3 {
+.grid_container_about .flex_item_travel .about_travel_buybutton h3 {
   padding: 20px;
 }
-.grid_container_about article .about_travel_buybutton p {
-  pad: 20px 80px;
+.grid_container_about .flex_item_travel .about_travel_buybutton p {
+  padding: 20px 80px;
 }
-.grid_container_about article .travel_img .about_img {
-  width: 500px !important;
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .grid_container_about article {
+    border: 1px solid black;
+    width: auto;
+    margin: 0px auto;
+    box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 7px 114px 5px rgba(0, 0, 0, 0.75);
+  }
+  .grid_container_about article div .about_img {
+    width: 100% !important;
+  }
+  .grid_container_about .flex_item_travel {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .grid_travel_col_1 {
+    grid-column: span 2;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -8,44 +8,87 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
 
-    .grid_travel_col_1 {
-        grid-column: span 4;
-    }
-
-    .flex_item_travel {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    article{
+    article {
         border: 1px solid black;
         width: auto;
-        margin: 0px 150px;
-        box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+        margin: 0px auto;
+        box-shadow: 10px 7px 114px 5px rgb(0 0 0 / 75%);
+        -webkit-box-shadow: 10px 7px 114px 5px rgb(0 0 0 / 75%);
         -moz-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
-        
+        }
 
-        .about_travel_buybutton{
-            h2{
-                padding: 30px;
-                font-weight: bold;
-            }       
-            h3{
-                padding: 20px;
+        .grid_travel_col_1 {
+            grid-column: span 4;
+        }
+        .flex_item_travel {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            div {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                img {
+                    width: 450px;
+                    padding: 15px;
+                }
+                .about_img {
+                    width: min(100% - 10px, 500px);
+                }
             }
-            p{
-                pad: 20px 80px;
+
+            .about_travel_buybutton {
+
+                    h2 {
+                        padding: 30px;
+                        font-weight: bold;
+                    }
+                    h3 {
+                        padding: 20px;
+                    }
+                    p {
+                        padding: 20px 80px;
+                    }
             }
         }
-        
-
-        .travel_img{
-            .about_img{
-                width: 500px!important;
-            }
-        }
-    }
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 850px){
+
+    .grid_container_about  {
+
+        article{
+            border: 1px solid black;
+            width: auto;
+            margin: 0px auto;
+            box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+
+            div{
+                .about_img{
+                    width: 100%!important;
+                }
+            }
+
+            
+        }
+
+        .flex_item_travel {
+            flex-direction: column-reverse;
+            width: 100%;
+        }
+    }
+    
+    .grid_travel_col_1 {
+        grid-column: span 2;
+    }
+}
