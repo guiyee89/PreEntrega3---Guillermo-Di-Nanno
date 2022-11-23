@@ -1,2 +1,51 @@
 @use "./variables";
 
+.grid_container_about{
+    width: auto;
+    margin: 20px 40px;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    .grid_travel_col_1 {
+        grid-column: span 4;
+    }
+
+    .flex_item_travel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    article{
+        border: 1px solid black;
+        width: auto;
+        margin: 0px 150px;
+        box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 7px 114px 5px rgba(0,0,0,0.75);
+        
+
+        .about_travel_buybutton{
+            h2{
+                padding: 30px;
+                font-weight: bold;
+            }       
+            h3{
+                padding: 20px;
+            }
+            p{
+                pad: 20px 80px;
+            }
+        }
+        
+
+        .travel_img{
+            .about_img{
+                width: 500px!important;
+            }
+        }
+    }
+}
+
