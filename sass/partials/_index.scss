@@ -79,6 +79,7 @@ nav {
         li{
             padding: 15px 10px;
             font-size: 22px;
+            margin-right: 50px;
         }
     }
     
@@ -199,7 +200,7 @@ footer{
 
 // ------   TABLET Y MOBILE   ---------
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
 
 // HEADER GENERAL
     nav {

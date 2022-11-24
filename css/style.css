@@ -195,6 +195,7 @@ nav .menu {
 nav .menu li {
   padding: 15px 10px;
   font-size: 22px;
+  margin-right: 50px;
 }
 nav .toggle {
   font-size: 50px;
@@ -249,7 +250,7 @@ nav .toggle {
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   nav {
     display: block;
     position: relative;
@@ -482,6 +483,19 @@ p {
   .grid_travel_col_1 {
     grid-column: span 2;
   }
+}
+section {
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+section form .form-padding {
+  margin-right: 20px;
+  margin: 20px;
+}
+section form .col-12 {
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
