@@ -484,10 +484,17 @@ p {
     grid-column: span 2;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 section {
   width: auto;
   display: flex;
   justify-content: space-around;
+}
+section form {
+  margin-left: 10px;
 }
 section form .form-padding {
   margin-right: 20px;

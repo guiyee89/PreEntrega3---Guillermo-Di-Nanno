@@ -1,5 +1,9 @@
 @use "./variables";
 
+body{
+    overflow-x: hidden;
+}
+
 section{
     width: auto;
     display: flex;
@@ -7,6 +11,8 @@ section{
 
     form{
         
+        margin-left: 10px;
+
         .form-padding{
             margin-right: 20px;
             margin: 20px;
