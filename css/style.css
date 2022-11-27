@@ -453,10 +453,10 @@ nav .toggle {
   font-weight: bold;
 }
 .grid_container_about .flex_item_travel .about_travel_buybutton h3 {
-  padding: 20px;
+  padding: 40px;
 }
 .grid_container_about .flex_item_travel .about_travel_buybutton p {
-  padding: 20px 39px;
+  padding: 10px 120px;
 }
 
 p {
@@ -464,7 +464,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1100px) {
   .grid_container_about article {
     border: 1px solid black;
     width: auto;
@@ -479,6 +479,9 @@ p {
   .grid_container_about .flex_item_travel {
     flex-direction: column-reverse;
     width: 100%;
+  }
+  .grid_container_about .flex_item_travel .about_travel_buybutton p {
+    padding: 20px 39px;
   }
   .grid_travel_col_1 {
     grid-column: span 2;

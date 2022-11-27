@@ -47,10 +47,10 @@
                         font-weight: bold;
                     }
                     h3 {
-                        padding: 20px;
+                        padding: 40px;
                     }
                     p {
-                        padding: 20px 39px;
+                        padding: 10px 120px;
                     }
             }
         }
@@ -61,7 +61,7 @@ p {
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1100px){
 
     .grid_container_about  {
 
@@ -85,6 +85,12 @@ p {
         .flex_item_travel {
             flex-direction: column-reverse;
             width: 100%;
+
+            .about_travel_buybutton {
+                p {
+                    padding: 20px 39px;
+                }
+            }
         }
     }
     
