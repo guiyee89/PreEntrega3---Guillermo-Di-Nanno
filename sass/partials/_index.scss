@@ -99,6 +99,10 @@ nav {
 // ----------  MAIN  -----------
 
 // CAROUSEL
+.carousel{
+    z-index: 0;
+}
+
 .carousel-item{
     img{
         width: 85%!important;
