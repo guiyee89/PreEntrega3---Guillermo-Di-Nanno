@@ -388,6 +388,7 @@ nav .toggle {
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
+  padding: 0px 50px;
 }
 .grid_container_service article {
   border: 1px solid black;
@@ -404,18 +405,25 @@ nav .toggle {
   width: 450px;
   padding: 15px;
 }
+.grid_container_service .grid_service_col_1 div p {
+  padding: 0px 200px;
+}
 
 @media screen and (max-width: 850px) {
   .grid_container_service {
     grid-template-columns: 1fr;
     margin: 20px 10px;
     text-align: center;
+    padding: 0px;
   }
   .grid_container_service .grid_service_col_1 {
     width: 100%;
   }
   .grid_container_service .grid_service_col_1 img {
     width: 100%;
+  }
+  .grid_container_service .grid_service_col_1 div p {
+    padding: 0px;
   }
 }
 .grid_container_about {
